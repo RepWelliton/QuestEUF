@@ -1,0 +1,70 @@
+\documentclass[oneside,a4paper,12pt]{book}
+\usepackage[english,brazilian]{babel}
+\usepackage[alf]{abntex2cite}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=20mm, bottom=20mm, left=20mm, right=20mm]{geometry}
+\usepackage{framed}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+%\graphicspath{{./img/}} % As pastas ficaram separadas
+\definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{tipa}
+%\usepackage[pdf]{pstricks} %% imagens .tex
+%\usepackage{pst-all}
+\usepackage{pstricks-add}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{multirow}
+\usepackage{mathrsfs}
+\usepackage{stmaryrd}
+\usepackage{multicol}
+\usepackage[shortlabels]{enumitem}
+
+
+
+\newcommand{\euf}{\Large \textbf{EUF}}
+\newcommand{\exame}{\textbf{Exame Unificado das Pós-graduações em Física}}
+\newcommand{\classica}{\textbf{Mecânica Clássica}}
+\newcommand{\resposta}{\textit{\textcolor[rgb]{1.00,0.00,0.00}{Solução} \ }}
+
+
+
+
+\begin{document}
+	\pagestyle{empty}
+	
+	\begin{center}
+		
+		\euf
+		\par
+		\vspace{10pt}
+		\exame
+%		\par
+%		\vspace{10pt}
+%		\classica		
+	\end{center}
+	
+	\vspace{10pt}
+	
+
+
+\input{classica/classica.tex}
+
+%\input{eletromag/eletromag.tex}
+
+%\input{moderna/moderna.tex}
+
+%\input{quantica/quantica.tex}
+
+%\input{termica/termica.tex}
+
+
+\end{document}
