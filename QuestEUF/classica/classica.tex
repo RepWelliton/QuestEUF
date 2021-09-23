@@ -5,7 +5,7 @@
 \begin{enumerate}[start=1,label={\bfseries Q\arabic*.}]
 
 
-\item Considere os arranjos de dois blocos de massas $m_{1}$ e $m_{2}$ ($m_{1} < m_{2}$) ilustrados nas figuras abaixo. Os coeficientes de atrito cinético entre cada bloco e o chão são $\mu_{1}$ e $\mu_{2}$, respectivamente. A aceleração da gravidade é $g$. Na Figura 1, uma força horizontal $\vec{F} = F(x)\hat{x}$ atua no bloco $m_{1}$ e o conjunto se move sem movimento relativo entre os blocos.
+\item Considere os arranjos de dois blocos de massas $m_{1}$ e $m_{2}$ ($m_{1} < m_{2}$) ilustrados nas figuras abaixo. Os coeficientes de atrito cinético entre cada bloco e o chão são $\mu_{1}$ e $\mu_{2}$, respectivamente. A aceleração da gravidade é $g$. Na Figura \ref{fig:bloco1apng}, uma força horizontal $\vec{F} = F(x)\hat{x}$ atua no bloco $m_{1}$ e o conjunto se move sem movimento relativo entre os blocos.
 
 
 \begin{figure}[!ht]
@@ -24,7 +24,7 @@
 	\end{minipage}
 \end{figure}
 
-a) Indique esquematicamente todas as forças atuando em cada bloco da Figura 1.
+a) Indique esquematicamente todas as forças atuando em cada bloco da Figura \ref{fig:bloco1apng}.
 
 \resposta
 
@@ -46,7 +46,7 @@ As forças esquematizadas são as seguintes:
 
 
 
-b) Encontre a aceleração do bloco $m_{1}$ no caso da Figura \ref{bloco1png}. Dê sua resposta final em termos de $m_{1}$, $m_{2}$, $\mu_{1}$, $\mu_{2}$, $g$ e $F(x)$.
+b) Encontre a aceleração do bloco $m_{1}$ no caso da Figura \ref{fig:bloco1apng}. Dê sua resposta final em termos de $m_{1}$, $m_{2}$, $\mu_{1}$, $\mu_{2}$, $g$ e $F(x)$.
 
 \resposta
 
@@ -73,7 +73,7 @@ $$
 $$
 \end{itemize}
 
-c) Encontre a variação da energia cinética do arranjo da Figura 1 se a posição do bloco de massa $m_{1}$ variar de $x_{1}$ até $x_{2}$ ($x_{2} > x_{1}$) e se $F(x) = \alpha x$, onde $\alpha$ é uma constante positiva.
+c) Encontre a variação da energia cinética do arranjo da Figura \ref{fig:bloco1apng} se a posição do bloco de massa $m_{1}$ variar de $x_{1}$ até $x_{2}$ ($x_{2} > x_{1}$) e se $F(x) = \alpha x$, onde $\alpha$ é uma constante positiva.
 
 \resposta
 
@@ -93,7 +93,7 @@ $$
 \Delta K = \int_{x_{2}}^{x_{1}} \vec{F}_{R} \cdot d\vec{l} = \frac{\alpha}{2} (x_{2}^{2} - x_{1}^{2}) - g(\mu_{1}m_{1} + \mu_{2}m_{2})(x_{2} - x_{1})
 $$
 
-d) Considere agora que ambos os conjuntos das Figuras 1 e 2 se movam instantaneamente com a mesma velocidade $v$ e que a potência dissipada por atrito no arranjo da Figura 2 seja o dobro da do arranjo da Figura 1. Encontre a razão $\mu_{2}/\mu_{1}$.
+d) Considere agora que ambos os conjuntos das Figuras \ref{fig:bloco1apng} e \ref{fig:bloco2apng} se movam instantaneamente com a mesma velocidade $v$ e que a potência dissipada por atrito no arranjo da Figura \ref{fig:bloco2apng} seja o dobro da do arranjo da Figura \ref{fig:bloco1apng}. Encontre a razão $\mu_{2}/\mu_{1}$.
 
 \resposta
 
@@ -115,11 +115,11 @@ $$
 
 
 
-\item Um pêndulo de comprimento l e massa $m$ está preso a um bloco de massa $M$. O bloco é livre para se mover sem atrito ao longo de um trilho horizontal, conforme indicado na figura. Considere a posição $y = 0$ ($\theta = \pi/2$) como o zero de energia potencial gravitacional. A aceleração da gravidade é $g$.
+\item Um pêndulo de comprimento $\ell$ e massa $m$ está preso a um bloco de massa $M$. O bloco é livre para se mover sem atrito ao longo de um trilho horizontal, conforme indicado na figura. Considere a posição $y = 0$ ($\theta = \pi/2$) como o zero de energia potencial gravitacional. A aceleração da gravidade é $g$.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{classica-img/pendulo.png}
+\includegraphics[scale=0.9]{classica-img/pendulo.png}
 \end{figure}
 
 
@@ -129,19 +129,22 @@ a) Escreva a lagrangiana do sistema em termos das coordenadas generalizadas $x$ 
 
 No sistema de referência do enunciado, as posições do bloco de massa $M$ e da massa do pêndulo $m$ são dadas, respectivamente, por $\vec{r}_{M} = x(t)\hat{i}$ e $\vec{r}_{m} = [x(t) + l sen\theta(t)]\hat{i} - l cos\theta(t)\hat{j}$. Deste modo,
 
-$$
-v_{m}^{2} = \left| \frac{d\vec{r}_{m}}{dt} \right|^{2} = \left( \dot{x} + l\dot{\theta} cos \theta  \right)^{2} + \left( l\dot{\theta} sen \theta \right)^{2} = \dot{x}^{2} + l^{2} \dot{\theta}^{2} + 2 l\dot{\theta}\dot{x}cos \theta
-$$
+
+\begin{eqnarray}
+	v_{M}^{2} & = & \left| \frac{d\vec{r}_{M}}{dt} \right|^{2} = \dot{x}^{2} \\
+	v_{m}^{2} & = & \left| \frac{d\vec{r}_{m}}{dt} \right|^{2} = \left( \dot{x} + l\dot{\theta} cos \theta  \right)^{2} + \left( l\dot{\theta} sen \theta \right)^{2} = \dot{x}^{2} + l^{2} \dot{\theta}^{2} + 2 l\dot{\theta}\dot{x}cos \theta
+\end{eqnarray}
+
 
 Portanto, adotando a posição $y = 0$ ($\theta = \pi/2$) como o zero de energia potencial gravitacional, a lagrangiana do sistema é dada por
 
 $$
-L = \frac{1}{2} M \dot{x}^{2} + \frac{1}{2} m \left( \dot{x}^{2} + l^{2} \dot{\theta}^{2} 2 l\dot{\theta}\dot{x}cos \theta   \right) + mlg \ cos \theta.
+L = K - U = \frac{1}{2} M \dot{x}^{2} + \frac{1}{2} m \left( \dot{x}^{2} + l^{2} \dot{\theta}^{2} + 2 l\dot{\theta}\dot{x}cos \theta   \right) + mlg \ cos \theta.
 $$
 
 Das equações de Euler-Lagrange, as equações de movimento são
 
-\begin{eqnarray}
+\begin{eqnarray}\label{eq:mov-em-x}
 (m + M) \ddot{x} + (ml \cos \theta) \ddot{\theta} - (ml \ sen \theta) \dot{\theta}^{2} &=& 0 \\
 l \ddot{\theta} + cos \theta \ddot{x} + g sen \theta &=& 0
 \end{eqnarray}
@@ -158,7 +161,7 @@ P_{x} &=& (\vec{p}_{M} + \vec{p}_{m})\cdot \hat{i} = M\dot{x} + m (\dot{x} + l \
 \Rightarrow \frac{dP_{x}}{dt} &=& (m+M)\ddot{x} + (mlcos\theta)\ddot{\theta} - (mlsen\theta)\dot{\theta}^{2} = 0,
 \end{eqnarray*}
 
-onde usamos a Eq. (1) no último passo. Alternativamente, percebe-se que a coordenada $x$ é ignorável, ou seja, a lagrangiana não depende de $x$. Portanto, o momento canonicamente conjugado a $x$, que é o lado esquerdo da Eq. (1), é conservado.
+onde usamos a Eq. (\ref{eq:mov-em-x}) no último passo. Alternativamente, percebe-se que a coordenada $x$ é ignorável, ou seja, a lagrangiana não depende de $x$. Portanto, o momento canonicamente conjugado a $x$, que é o lado esquerdo da Eq. (\ref{eq:mov-em-x}), é conservado.
 
 
 c) Considerando o regime de pequenas oscilações ($\theta << 1$), encontre o modo normal de oscilação do sistema e a sua frequência.
@@ -167,10 +170,10 @@ c) Considerando o regime de pequenas oscilações ($\theta << 1$), encontre o mo
 
 Com $\theta << 1$ ($sen \theta \approx \theta$ e $cos \theta \approx 1$), as equações de movimento podem ser linearizadas
 
-\begin{eqnarray}
-(m+M)\ddot{x} + ml\ddot{\theta} &\approx & 0, \\
-\ddot{x} + l\ddot{\theta} + g \theta &=& 0.
-\end{eqnarray}
+\begin{align}
+(m+M)\ddot{x} + ml\ddot{\theta} &\approx & 0, \label{eq:linearizadas1} \\
+\ddot{x} + l\ddot{\theta} + g \theta &=& 0.  \label{eq:linearizadas2}
+\end{align}
 
 Isolando a equação para $\theta$, obtém-se
 
@@ -179,7 +182,7 @@ $$
 $$
 
 
-cuja solução geral é $\theta (t) = A cos (\omega t + \varphi)$, onde $\omega = \sqrt{\frac{m+M}{M} \frac{g}{l}}$ e $A$ e $\varphi$ são constantes determinadas pelas condições iniciais. Integrando duas vezes a Eq. (3) em relação ao tempo obtém-se
+cuja solução geral é $\theta (t) = A cos (\omega t + \varphi)$, onde $\omega = \sqrt{\frac{m+M}{M} \frac{g}{l}}$ e $A$ e $\varphi$ são constantes determinadas pelas condições iniciais. Integrando duas vezes a Eq. (\ref{eq:linearizadas1}) em relação ao tempo obtém-se
 
 $$
 x(t) = -\frac{ml}{m+M} \theta l + Bt + C,
@@ -193,7 +196,7 @@ d) Além do caso trivial no qual o sistema está parado ($\dot{x} = 0$, $\dot{\t
 
 \resposta
 
-Sim. Fazendo $A = 0$ na solução do item (c), obtém-se $\theta(t) = 0$ e $x(t) = Bt + C$, isto é, o sistema se move com um todo com velocidade constante $B$, com o pêndulo sempre na vertical $\theta = 0$. Este é o outro modo normal do problema, cuja frequência de oscilação é nula. Deve-se notar que essa é uma solução exata das Eqs. de movimento (1) e (2).
+Sim. Fazendo $A = 0$ na solução do item (c), obtém-se $\theta(t) = 0$ e $x(t) = Bt + C$, isto é, o sistema se move com um todo com velocidade constante $B$, com o pêndulo sempre na vertical $\theta = 0$. Este é o outro modo normal do problema, cuja frequência de oscilação é nula. Deve-se notar que essa é uma solução exata das Eqs. de movimento (\ref{eq:linearizadas1}) e (\ref{eq:linearizadas2}).
 
 
 
@@ -265,7 +268,8 @@ d) Considere o caso em que $\gamma = 0$ e determine a solução geral da equaç�
 
 a) Indique esquematicamente todas as forças que atuam no carro, se o atrito for desprezível.
 
-\resposta As forças que atuam no carro são a normal $\mathbb{N}$ e o peso $\mathbb{P}$, como mostrado na figura abaixo.
+\resposta As forças que atuam no carro são a normal $\mathbf{N}$ e o peso $\mathbf{P}$, como mostrado na figura abaixo.
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.8]{classica-img/inclina1}
@@ -275,14 +279,26 @@ a) Indique esquematicamente todas as forças que atuam no carro, se o atrito for
 b) Ainda desprezando o atrito, encontre o módulo da velocidade com a qual o carro se move, se ele descreve um círculo de raio $R$.
 
 \resposta Tomando um sistema de referência fixo na pista e com origem na posição instantânea do carro com o eixo $z$ na direção vertical, teremos equilíbrio na direção $z$
-$$
-N \cos \theta = m g
-$$
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{classica-img/inclina1b}
+\end{figure}
+
+
+
+\begin{equation} \label{eq:dir-vertical}
+ N \cos \theta = m g
+\end{equation}
+
 onde $m$ é a massa do carro. No plano $xy$ o carro realiza um movimento circular uniforme com velocidade $v$ cuja resultante centrípeta é
-$$
+
+\begin{equation} \label{eq:dir-horizontal}
 N \sin \theta = \frac{mv^{2}}{R}.
-$$
-Eliminando $\mathbf{N}$ das Eqs. (1) e (2),
+\end{equation}
+
+Eliminando $N$ das Eqs. (\ref{eq:dir-vertical}) e (\ref{eq:dir-horizontal}),
+
 $$
 v = \sqrt{gR\tan \theta}
 $$
@@ -290,9 +306,10 @@ $$
 c) A partir deste item, considere que haja atrito entre os pneus do carro e a pista e que o coeficiente de atrito estático seja $\mu$. Se o carro se move com a velocidade máxima possível sem derrapar, indique esquematicamente todas as forças que atuam no carro.
 
 \resposta Se $\mathbf{F}_{at}$ é a força de atrito, o diagrama de forças agora é
+
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{classica-img/inclina2}
+\includegraphics[scale=0.8]{classica-img/inclina2c}
 \end{figure}
 
 
@@ -300,14 +317,23 @@ c) A partir deste item, considere que haja atrito entre os pneus do carro e a pi
 d) Qual é o módulo da velocidade máxima com a qual o carro é capaz de fazer a curva de raio $R$ sem derrapar?
 
 \resposta Usando o mesmo sistema de referência do item (b), ainda há equilíbrio na direção $z$
-$$
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{classica-img/inclina2}
+\end{figure}
+
+\begin{equation}\label{eq:atrito}
 N \cos \theta=m g+F_{a t} \sin \theta=m g+\mu N \sin \theta
-$$
+\end{equation}
+
 onde já usamos que, no limiar da derrapagem, a força de atrito estático $F_{at}$ atinge seu valor máximo, $\mu N$. A resultante centrípeta no plano $xy$ agora é
-$$
+
+\begin{equation}\label{eq:res-centrip}
 N \sin \theta+F_{a t} \cos \theta=N \sin \theta+\mu N \cos \theta=\frac{m v_{\max }^{2}}{R}
-$$
-onde $v_{max}$ é a velocidade máxima sem derrapar. Eliminando novamente $N$ das Eqs. (3) e (4),
+\end{equation}
+
+onde $v_{max}$ é a velocidade máxima sem derrapar. Eliminando novamente $N$ das Eqs. (\ref{eq:atrito}) e (\ref{eq:res-centrip}),
 $$
 v_{\max }=\sqrt{g R\left(\frac{\tan \theta+\mu}{1-\mu \tan \theta}\right)}.
 $$
@@ -319,10 +345,14 @@ e) Suponha agora que $sin \ \theta > \mu cos \theta$ e que o carro se mova bem m
 \centering
 \includegraphics[scale=0.8]{classica-img/inclina3}
 \end{figure}
-O desenvolvimento do item (d) se repete bastando inverter o sinal de $\mu \rightarrow - \mu$ e a velocidade máxima sem derrapar $v_{min}$ é
+
+O desenvolvimento do item (d) se repete bastando inverter o sinal de $\mu \rightarrow - \mu$ e a velocidade mínima sem derrapar $v_{min}$ é
+
 $$
 v_{\min }=\sqrt{g R\left(\frac{\tan \theta-\mu}{1+\mu \tan \theta}\right)}
 $$
+
+
 Note que o enunciado diz que $\tan \theta > \mu$, o que garante que o resultado obtido é um número real. Do contrário, o carro consegue ficar em repouso na pista, pois o ângulo é menor que o ângulo crítico $\theta_{c} = \arctan(\mu)$ e $v_{min} = 0$.
 
 
@@ -379,24 +409,26 @@ $$
 \end{aligned}
 $$
 As Eqs. de Euler-Lagrange são
-$$
-\begin{aligned}
-&\frac{\partial L}{\partial r}-\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right)=0 \rightarrow \ddot{r}-(r+l) \dot{\theta}^{2}-g \cos \theta+\frac{k}{m} r=0\\
-&\frac{\partial L}{\partial \theta}-\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)=0 \quad \rightarrow \quad(r+l) \ddot{\theta}+2 \dot{r} \dot{\theta}+g \sin \theta=0
-\end{aligned}
-$$
+\begin{align}\label{euler-lagrange}
+\frac{\partial L}{\partial r}-\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right) = 0 & \rightarrow & \ddot{r}-(r+l) \dot{\theta}^{2}-g \cos \theta+\frac{k}{m} r = 0 \\
+\frac{\partial L}{\partial \theta}-\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right) =  0 & \rightarrow & (r+l) \ddot{\theta}+2 \dot{r} \dot{\theta}+g \sin \theta = 0
+\end{align}
 
 e) Considere agora o movimento puramente vertical do pêndulo, ou seja, $\theta(t) = 0$ para todo $t$. Encontre a solução geral (em termos de duas constantes arbitrárias) da equação de Euler-Lagrange para $r$.
 
-\resposta A equação de movimento (5) para $\theta = \dot{\theta} = 0$ assume a forma
-$$
+\resposta A equação de movimento (\ref{euler-lagrange}) para $\theta = \dot{\theta} = 0$ assume a forma
+
+\begin{equation}\label{eq:movimento}
 \ddot{r} + \frac{k}{m} r = g.
-$$
-A solução geral da Eq. (7) é dada por
+\end{equation}
+
+A solução geral da Eq. (\ref{eq:movimento}) é dada por
+
 $$
 r(t) = r_{H}(t) + r_{P}(t)
 $$
-onde $r_{H}(t)$ é a solução geral da equação homogênea (ou seja, fazendo $g = 0$ na Eq. (7)) e $r_{P}(t)$ é uma solução particular qualquer da equação não homogênea. Como a equação homogênea é igual à equação de movimento do oscilador harmônico simples, temos que
+
+onde $r_{H}(t)$ é a solução geral da equação homogênea (ou seja, fazendo $g = 0$ na Eq. (\ref{eq:movimento}) e $r_{P}(t)$ é uma solução particular qualquer da equação não homogênea. Como a equação homogênea é igual à equação de movimento do oscilador harmônico simples, temos que
 $$
 r_{H}(t) = A \cos \omega t + B \sin \omega t,
 $$
@@ -404,11 +436,11 @@ onde $\omega = \sqrt{k/m}$ e $A$ e $B$ são constantes arbitrárias determinadas
 $$
 r_{P}(t) = Ct^{2} + Dt + E.
 $$
-Substituindo na Eq. (7), verifica-se que as constantes $C = D = 0$ e $E = g/\omega^{2} = mg/k$. Assim,
+Substituindo na Eq. (\ref{eq:movimento}), verifica-se que as constantes $C = D = 0$ e $E = g/\omega^{2} = mg/k$. Assim,
 $$
 r_{P}(t) = \frac{g}{\omega^{2}} = \frac{mg}{k}.
 $$
-Por fim, a solução geral da Eq. (7) é dada por
+Por fim, a solução geral da Eq. (\ref{eq:movimento}) é dada por
 $$
 r(t) = A \cos \omega t + B \sin \omega t + \frac{mg}{k}.
 $$
@@ -536,21 +568,27 @@ d) A partir das equações de movimento derivadas no item (b), mostre que a part
 a) Obtenha o módulo da velocidade do corpo como função do tempo.
 
 \resposta Da componente da segunda lei de Newton na direção vertical (orientada para cima), a queda é descrita por
-$$
+
+\begin{equation}\label{eq:queda}
 F=m \frac{d v}{d t}=-m g-k m v \Rightarrow \frac{d v}{d t}=-(g+k v) \Rightarrow \int_{0}^{v} \frac{d v^{\prime}}{g+k v^{\prime}}=-\int_{0}^{t} d t^{\prime}
-$$
+\end{equation}
+
 onde usamos a condição inicial de que o corpo parte do repouso. Usando
 $$
 \int \frac{d x}{a x+b}=\frac{1}{a} \ln (a x+b)
 $$
 segue que
-$$
+
+\begin{equation}\label{eq:integrando}
 \int_{0}^{v} \frac{d v^{\prime}}{g+k v^{\prime}}=-\int_{0}^{t} d t^{\prime} \Rightarrow \ln \left(\frac{g+k v}{g}\right)=-k t
-$$
+\end{equation}
+
 Invertendo a última relação
-$$
+
+\begin{equation}\label{eq:ob-v}
 v(t)=\frac{g}{k}\left(e^{-k t}-1\right)
-$$
+\end{equation}
+
 Como $v(t)<0$ (corpo em queda), o módulo da velocidade é
 $$
 |v(t)|=-\frac{g}{k}\left(e^{-k t}-1\right)=\frac{g}{k}\left(1-e^{-k t}\right)
@@ -558,45 +596,58 @@ $$
 
 b) Qual é a velocidade terminal do corpo (módulo da velocidade no limite $t \rightarrow \infty$)?
 
-\resposta A velocidade terminal $v_{\text {term}}$ é obtida tomando-se o limite $t \rightarrow \infty$ na Eq. (3)
+\resposta A velocidade terminal $v_{\text {term}}$ é obtida tomando-se o limite $t \rightarrow \infty$ na Eq. (\ref{eq:ob-v})
 $$
 v_{\text {term}}=\lim _{t \rightarrow \infty} \frac{g}{k}\left(e^{-k t}-1\right)=-\frac{g}{k} \Rightarrow\left|v_{\text {term}}\right|=\frac{g}{k}
 $$
 
 c) Encontre $z(t)$, a posição do corpo como função do tempo (considere $z(0) = 0$).
 
-\resposta A posição vertical do corpo é obtida integrando mais uma vez a Eq.
+\resposta A posição vertical do corpo é obtida integrando mais uma vez a Eq. \ref{eq:ob-v}
+
 $$
 v=\frac{d z}{d t}=\frac{g}{k}\left(e^{-k t}-1\right) \Rightarrow \frac{k}{g} \int_{0}^{z} d z^{\prime}=\int_{0}^{t}\left(e^{-k t^{\prime}}-1\right) d t^{\prime} \Rightarrow \frac{k z}{g}=-\frac{e^{-k t}}{k}+\frac{1}{k}-t
 $$
+
 donde
-$$
+
+\begin{equation}\label{eq:z-em-t}
 z(t)=\frac{g}{k^{2}}\left(1-e^{-k t}\right)-\frac{g t}{k}
-$$
+\end{equation}
 
 d) Encontre $z(v)$, a posição do corpo como função do módulo da velocidade.
 
-\resposta Das Eqs. (3) e (4)
+\resposta Das Eqs. (\ref{eq:ob-v}) e (\ref{eq:z-em-t})
 $$
 z=-\frac{v}{k}-\frac{g}{k} t
 $$
-Eliminando $t$ usando a Eq. $(2),$ encontramos a expressão procurada
+
+Eliminando $t$ usando a Eq. (\ref{eq:integrando}), encontramos a expressão procurada
+
 $$
 z(v)=\frac{g}{k^{2}} \ln \left(1+\frac{k v}{g}\right)-\frac{v}{k}
 $$
-Alternativamente, da Eq. ( 1 )
+
+Alternativamente, da Eq. (\ref{eq:queda})
+
 $$
 a=\frac{d v}{d t}=-(g+k v)
 $$
+
 Mas
+
 $$
 \frac{d v}{d z}=\frac{d v}{d t} \frac{d t}{d z}=\frac{a}{v} \Rightarrow v d v=a d z=-(g+k v) d z
 $$
+
 Logo
+
 $$
 -\int_{0}^{v} \frac{v^{\prime}}{g+k v^{\prime}} d v^{\prime}=\left.\int_{0}^{z} d z^{\prime} \Rightarrow \frac{g \ln (g+k v)-k v}{k^{2}}\right|_{0} ^{v}=\left.z\right|_{0} ^{z}
 $$
+
 onde usamos o resultado $\int \frac{x}{a+b x} d x=\frac{b x-a \ln (a+b x)}{b^{2}} .$ Segue que
+
 $$
 z(v)=\frac{g}{k^{2}} \ln \left(1+\frac{k v}{g}\right)-\frac{v}{k}
 $$
@@ -863,7 +914,7 @@ Dado que $a$ é constante, podemos usar a seguinte relação, válida para um mo
 %
 \begin{equation}\label{eq5}
 \begin{array}{ccc}
-  v^{2} & = & v_{o}^{2} 2 a \Delta x \\
+  v^{2} & = & v_{o}^{2} + 2 a \Delta x \\
         & = & 2ah / \sin \theta ,
 \end{array}
 \end{equation}
